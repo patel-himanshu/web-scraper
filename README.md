@@ -1,4 +1,5 @@
-# What is a Web Scraper
+# What is Web Scraping
+Web Scraping is a computer software technique used for extracting large amounts of information from websites. It mainly focuses on the transformation of unstructured data (in the form of HTML) to structured tree format data (database, CSV).
 
 # Difference between Web Scraper and Web Crawler
 
@@ -14,3 +15,4 @@ Generally, if you are using scraped data for personal use and do not plan to rep
 4. https://www.analyticsvidhya.com/blog/2015/10/beginner-guide-web-scraping-beautiful-soup-python/
 5. https://realpython.com/beautiful-soup-web-scraper-python/
 6. https://www.skylynapps.com/scrapemate/learn/help/general/difference-between-crawler-and-scraper.php
+7. https://medium.com/quick-code/python-web-scraping-tutorial-74ace70e01

@@ -1,3 +1,5 @@
+* **Note**: This repository is a work in progress. More scripts are supposed to be added in this repository in near future.
+
 # What is Web Scraping
 
 **Web Scraping** is a computer software technique used for extracting large amounts of information from websites. It mainly focuses on the transformation of unstructured data (in the form of HTML) to structured tree format data (database, CSV). This is particularly useful when we want to organize and analyse data obtained from a website, outside of the browse, and then study and draw patterns in them.

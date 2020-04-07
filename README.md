@@ -24,7 +24,7 @@ One may check the robots.txt of a website by adding a `/robots.txt` after the UR
 
 **Selenium** is an open-source web testing tool. It is used to automate browser activities, hence it is also known as a web-driver. It is particularly useful for scraping, if the website uses JavaScript to serve content.
 
-Other libraries (such as Requests, lxml), also have their own benefits. All of these libraries have quite a simple learning curve, and contain good documentation.
+Other libraries (such as **Requests**, **lxml**), also have their own benefits. All of these libraries have quite a simple learning curve, and contain good documentation.
 
 # Resources
 

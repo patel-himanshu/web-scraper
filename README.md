@@ -20,13 +20,13 @@ One may check the robots.txt of a website by adding a `/robots.txt` after the UR
 
 # Python Tools for Web Scraping
 
-**Beautiful Soup** is a Python library for getting data out of HTML, XML, and other markup languages. It is a data parser. Beautiful Soup helps you pull particular content from a webpage, remove the HTML markup, and save the information. It is a tool for web scraping that helps you clean up and parse the documents you have pulled down from the web.
+**Beautiful Soup** is a Python library for getting data out of HTML, XML, and other markup languages. It is a data parser. Beautiful Soup helps you pull particular content from a webpage, remove the HTML markup, and save the information. It is a tool for web scraping that helps you clean up and parse the documents you have pulled down from the web. The 3 supported parsers for Beautiful Soup are *html.parser*, *html5lib* and *lxml*.
 
 **Scrapy** is an application framework for crawling web sites and extracting structured data which can be used for a wide range of useful applications, like data mining, information processing or historical archival. It can also be used to extract data using APIs. It is a complete web scraping solution.
 
 **Selenium** is an open-source web testing tool. It is used to automate browser activities, hence it is also known as a web-driver. It is particularly useful for scraping, if the website uses JavaScript to serve content.
 
-Other libraries (such as **Requests**, **lxml**), also have their own benefits. All of these libraries have quite a simple learning curve, and contain good documentation.
+Other libraries (such as **Requests**, **lxml**, **requests-html**), also have their own benefits. All of these libraries have quite a simple learning curve, and contain good documentation.
 
 # Resources
 

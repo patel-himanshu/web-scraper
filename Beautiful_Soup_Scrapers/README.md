@@ -16,7 +16,11 @@ The 3 supported parsers for Beautiful Soup are:
 
 ## Installation
 
-To install Scrapy on Linux or Mac OSX, execute the following the command on the terminal:
+To install Beautiful Soup on your system, execute the following command on your Terminal (if on Linux or Mac OSX) or Command Prompt (if on Windows).
 > `pip install beautifulsoup4`
 
-Perform the same thing in Command Prompt, if you are on Windows.
+If you want to install **lxml** parser library, use
+> `pip install lxml`
+
+If you want to install **html5lib** parser library, use
+> `pip install html5lib`

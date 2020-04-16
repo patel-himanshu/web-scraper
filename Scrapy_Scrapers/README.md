@@ -17,4 +17,5 @@ To install Scrapy on your system, execute the following command on your Terminal
 ## Resources 
 
 1. [Scrapy: Official Documentation](https://scrapy.org/)
+1. [Introduction to Scrapy](https://www.pythongasm.com/introduction-to-scrapy/)
 1. [Web Scraping in Python using Scrapy](https://www.analyticsvidhya.com/blog/2017/07/web-scraping-in-python-using-scrapy/)

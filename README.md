@@ -31,8 +31,4 @@ Other libraries (such as **Requests**, **lxml**, **requests-html**), also have t
 # Resources
 
 1. [Web Scraping Toolbox](http://toscrape.com/)
-1. [Python Web Scraping Tutorial](https://medium.com/quick-code/python-web-scraping-tutorial-74ace70e01)
-1. [Beautiful Soup: Build a Web Scraper With Python](https://realpython.com/beautiful-soup-web-scraper-python/)
-1. [How to Build a Web Scraper With Python [Step-by-Step Guide]](https://hackernoon.com/how-to-build-a-web-scraper-with-python-step-by-step-guide-jxkp3yum)
-1. [Beginner’s guide to Web Scraping in Python using BeautifulSoup](https://www.analyticsvidhya.com/blog/2015/10/beginner-guide-web-scraping-beautiful-soup-python/)
 1. [5 Tasty Python Web Scraping Libraries](https://elitedatascience.com/python-web-scraping-libraries)

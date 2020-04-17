@@ -4,7 +4,7 @@ Scrapy is a popular open source framework for extracting the data you need from 
 
 ## Installation
 
-To install Scrapy on your system, execute the following command on your Terminal (if on Linux or Mac OSX) or Command Prompt (if on Windows).
+To install Scrapy on your system, execute the following command on your Terminal (if on Linux or macOS) or Command Prompt (if on Windows).
 > `pip install scrapy`
 
 ## Some Basic Commands

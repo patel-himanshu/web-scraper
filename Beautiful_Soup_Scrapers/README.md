@@ -16,7 +16,7 @@ The 3 supported parsers for Beautiful Soup are:
 
 ## Installation
 
-To install Beautiful Soup on your system, execute the following command on your Terminal (if on Linux or Mac OSX) or Command Prompt (if on Windows).
+To install Beautiful Soup on your system, execute the following command on your Terminal (if on Linux or macOS) or Command Prompt (if on Windows).
 > `pip install beautifulsoup4`
 
 If you want to install **lxml** parser library, use

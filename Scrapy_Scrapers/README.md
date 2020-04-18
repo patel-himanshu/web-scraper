@@ -1,6 +1,6 @@
 # Scrapy
 
-Scrapy is a popular open source framework for extracting the data you need from websites in a fast, simple, yet extensible way. It can be used for a wide range of useful applications, like data mining, information processing or historical archival. It can also be used to extract data using APIs. It is a complete web scraping solution.
+Scrapy is a popular open source framework for extracting the data you need from websites in a fast, simple, yet extensible way. It can be used for a wide range of useful applications, like data mining, information processing or historical archival. It can also be used to extract data using APIs. It is a complete web scraping solution. It allows creation of spiders, which are Python classes that define how a site(s) will be scrapped. It is particularly useful for building robust, concurrent, scalable, large scale scrapers.
 
 ## Installation
 

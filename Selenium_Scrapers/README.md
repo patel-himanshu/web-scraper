@@ -1,6 +1,6 @@
 # Selenium
 
-Selenium is an open-source web testing tool. It is used to automate browser activities, hence it is also known as a web-driver. It is particularly useful for scraping, if the website uses JavaScript to serve content.
+Selenium is an open-source web testing tool. It is used to automate browser activities, hence it is also known as a web-driver. We can open a Google Chrome/Mozilla Firefox automated window, visit URLs, navigate through links, click on buttons, etc. It is particularly useful for scraping sites which have heaavy-JavaScript rendered pages, or very complex build.
 
 ## Installation
 
@@ -31,10 +31,18 @@ Make the extracted file executable using
 Now move the chromedriver to **/usr/local/bin/** using
 > `sudo mv chromedriver /usr/local/bin/`
 
+## Ways to Increase Speed of Selenium Webdrivers
+
+1. Use Fast selectors. Search using ID or class or CSS Selector, instead of XPath.
+1. Headless browsers and drivers can make your scripts faster.
+1. Avoid loading images on the webpages, as long as they are not required.
+1. Pre-populate cookies in your driver.
+1. Use explicit waits. Avoid `driver.implicity_wait(waitingTime)`.
 
 ## Resources
 
 1. [Selenium: Official Documentation](https://www.selenium.dev/selenium/docs/api/py/index.html)
 1. [Selenium with Python](https://selenium-python.readthedocs.io/index.html)
+1. [Selenium Cheat Sheet](https://dev.to/razgandeanu/selenium-cheat-sheet-9lc)
 1. [Selenium Webdriver Python Tutorial for Web Automation](https://www.techbeamers.com/selenium-webdriver-python-tutorial/)
 1. [Web Scraping with Selenium and Python](https://www.scrapingbee.com/blog/selenium-python/)

@@ -73,6 +73,7 @@ while flag == 1:
         count_page += 1
         count_total += 1
 
+    # Provides exit condition for the while loop, if the desired number of products are scannned
     if count_total == search_limit:
         flag = 0
 
@@ -92,48 +93,79 @@ while flag == 1:
 
     page_num += 1
 
+    # Prevents any action for 2 seconds, meanwhile allowing the page to load
     time.sleep(2)
     
 # CAPTURING ALL INFORMATION FROM INDIVIDUAL PRODUCT PAGE 
 
 for page in pages_urls:
     
+    # Opening page corresponding to an individual product
     driver.get(page)
     
+    # Extracting brand name of the product
     brand_item = driver.find_element_by_xpath('/html/body/div[1]/div[1]/div[2]/div[2]/div[4]/div[1]/div/div/ul/li[3]/a').text
     brand.append(brand_item)
 
+    # Extracting model name of the product
     model_item = driver.find_element_by_class_name('product-title').text[len(brand_item)+1:]
     model.append(model_item)
 
+    # Extracting last sale price of the product
     retail_item = driver.find_element_by_xpath('/html/body/div[1]/div[1]/div[2]/div[2]/div[4]/div[2]/div/div[2]/ul/li[1]/span/span/p[2]').text
     retail_item = retail_item.replace('$','').replace(',','')
     sale_price.append(retail_item)
 
+    # Extracting the lowest ask value of the product
     ask_item = driver.find_element_by_xpath('/html/body/div[1]/div[1]/div[2]/div[2]/div[4]/div[2]/div/div[2]/div/div[1]/div[1]/a/div[1]/div').text
     ask_item = ask_item.replace('$','').replace(',','')
     ask_lowest.append(ask_item)
 
+    # Extracting the highest bid value of the product
     bid_item = driver.find_element_by_xpath('/html/body/div[1]/div[1]/div[2]/div[2]/div[4]/div[2]/div/div[2]/div/div[3]/div[1]/a/div[1]/div').text
     bid_item = bid_item.replace('$','').replace(',','')
     bid_highest.append(bid_item)
 
+    # Extracting the number of sales of the product in last 12 months
     sales_item = driver.find_element_by_xpath('/html/body/div[1]/div[1]/div[2]/div[2]/div[11]/div/div/div/div[3]/div[2]/div[1]/div[3]').text
     sales_item = sales_item.replace(',','')
     total_sales.append(sales_item)
 
+    # Extracting the product's premium price above retail price
     premium_item = driver.find_element_by_xpath('/html/body/div[1]/div[1]/div[2]/div[2]/div[11]/div/div/div/div[3]/div[2]/div[2]/div[3]').text
     price_premium.append(premium_item)
 
+    # Extracting the average price of the product in the last 12 months
     avg_item = driver.find_element_by_xpath('/html/body/div[1]/div[1]/div[2]/div[2]/div[11]/div/div/div/div[3]/div[2]/div[3]/div[3]').text
     avg_item = avg_item.replace('$','').replace(',','')
     avg_price.append(avg_item)
 
+    # If a brand is already present in the dictionary, then updating its values 
     if brand_item.title() in brand_product_count.keys():
         brand_product_count[brand_item.title()] += 1
         brand_product_total[brand_item.title()] += float(avg_item)
+    
+    # If a brand is not present in the dictionary, then adding it
     else:
         brand_product_count[brand_item.title()] = 1
         brand_product_total[brand_item.title()] = float(avg_item)
 
+# Closing the geckodriver
 driver.close()
+
+# Storing all retrieved data in a dictionary, which will be used to create a dataframe
+all_data = {'Brand Name': brand,
+            'Model Name': model,
+            'Last Sales Price (in $)': sale_price,
+            'Lowest Ask (in $)': ask_lowest,
+            'Highest Bid (in $)': bid_highest,
+            'Total Sales (in last 12 months)': total_sales,
+            'Price Premium above Retail Price': price_premium,
+            'Average Price (in $)': avg_price
+            }
+
+# Creates a dataframe
+table = pd.DataFrame(all_data)
+
+# Stores all data in a CSV file
+table.to_csv('Stockx Handbags (200 Most Popular).csv')

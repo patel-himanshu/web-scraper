@@ -16,6 +16,7 @@ Generally, if you are using scraped data for personal use and do not plan to rep
 
 One may check the robots.txt of a website by adding a `/robots.txt` after the URL of the website. The following link would give a beneficial insight about robots.txt
 
+1. [About /robots.txt](https://www.robotstxt.org/robotstxt.html)
 1. [How to Read and Respect Robots.txt](https://www.promptcloud.com/blog/how-to-read-and-respect-robots-file/)
 
 # Python Tools for Web Scraping
